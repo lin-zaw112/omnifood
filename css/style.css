@@ -21,7 +21,7 @@
 ---------------------------------
  *-- 02  Color
  -Primary : #e67e22;
- -Tints : #fdf2e9, #fff;
+ -Tints : #fdf2e9, #fff,#eee;
  -Shades : #b8651b;
  -Accents
  -Grays : #555 , #333;
@@ -53,12 +53,28 @@ body {
 .container {
     max-width: 120rem;
     margin: 0 auto;
+    padding: 3.2rem 0;
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #333;
 }
 .heading-primary {
     font-size: 5.2rem;
-    font-weight: 700;
+    margin-bottom: 3.2rem;
     line-height: 1.1;
-    letter-spacing: -0.5px;
+}
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
     margin-bottom: 3.2rem;
 }
 .btn:link,
@@ -96,7 +112,8 @@ body {
 }
 .grid {
     display: grid;
-    gap: 9.6rem;
+    row-gap: 9.6rem;
+    column-gap: 3.2rem;
 }
 .G2--cols {
     grid-template-columns: repeat(2, 1fr);
@@ -106,6 +123,9 @@ body {
 }
 .G4--cols {
     grid-template-columns: repeat(4, 1fr);
+}
+.grid-center-v {
+    align-items: center;
 }
 /* **************************************** */
 /* # header Components */
@@ -205,5 +225,33 @@ body {
 /* **************************************** */
 /* # How IT Work Section */
 /* **************************************** */
-
+.step-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 0.8rem;
+}
+.step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+.step-img-box {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.step-img-box::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    padding-bottom: 25%;
+    box-shadow: 0 0 0 5.2rem #fae5d3, 0 0 0 9.8rem #fdf2e9;
+    z-index: -1;
+}
+.step-img {
+    width: 35%;
+}
 /* **************************************** */
