@@ -77,6 +77,15 @@ body {
     line-height: 1.2;
     margin-bottom: 3.2rem;
 }
+.sub-heading {
+    color: #e67e22;
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.75px;
+}
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -221,6 +230,27 @@ body {
 .delivered-text span {
     color: #b8651b;
     font-weight: 700;
+}
+/* **************************************** */
+/* # Featured In Section  */
+/* **************************************** */
+.heading-featuredIn {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    color: #888;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.featuredIn-img-box {
+    display: flex;
+    gap: 4.4rem;
+    justify-content: center;
+}
+.featuredIn-img-box img {
+    height: 3.2rem;
+    filter: contrast(0);
 }
 /* **************************************** */
 /* # How IT Work Section */
