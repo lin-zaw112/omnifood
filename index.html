@@ -24,11 +24,14 @@
             <img src="./img/omnifood-logo.png" alt="logo" class="logo" />
             <nav class="main-nav">
                 <li class="main-nav-list">
-                    <a href="#" class="main-nav-link">Navigation 1</a
-                    ><a href="#" class="main-nav-link">Navigation 2</a
-                    ><a href="#" class="main-nav-link">Navigation 3</a
-                    ><a href="#" class="main-nav-link">Navigation 4</a
-                    ><a href="#" class="main-nav-link nav-cta">Navigation 5</a>
+                    <a href="#how" class="main-nav-link">How it works</a
+                    ><a href="#meals" class="main-nav-link">Meals</a
+                    ><a href="#testimonials" class="main-nav-link"
+                        >Testimonials</a
+                    ><a href="#pricing" class="main-nav-link">Pricing</a
+                    ><a href="#cta" class="main-nav-link nav-cta"
+                        >Try for free</a
+                    >
                 </li>
             </nav>
         </header>
@@ -116,9 +119,9 @@
                     </div>
                 </div>
             </section>
-            <section class="section-how">
+            <section class="section-how" id="how">
                 <div class="container">
-                    <p class="sub-heading">How it Work</p>
+                    <p class="sub-heading">How it Works</p>
                     <h2 class="heading-secondary">
                         Your daily dose of health in 3 simple steps
                     </h2>
@@ -186,7 +189,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-meals">
+            <section class="section-meals" id="meals">
                 <div class="container">
                     <span class="sub-heading text-center-v">Meals</span>
                     <h2 class="heading-secondary text-center-v">
@@ -350,7 +353,10 @@
                     <a href="#" class="link">See All Recipes &rAarr;</a>
                 </div>
             </section>
-            <section class="section-testimonial grid G2--cols">
+            <section
+                class="section-testimonial grid G2--cols"
+                id="testimonials"
+            >
                 <div class="testimonials-container container">
                     <span class="sub-heading">Testimonial</span>
                     <h2 class="heading-secondary">
@@ -512,7 +518,7 @@
                     </h2>
                 </div>
                 <div class="plans container">
-                    <div class="plan">
+                    <div class="plan" id="pricing">
                         <span class="plan-heading sub-heading text-center"
                             >stater</span
                         >
@@ -651,6 +657,79 @@
                             Going on vacation? Just pause your subscription, and
                             we refund unused days.
                         </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-CalltoAction" id="cta">
+                <div class="container">
+                    <div class="cta-container">
+                        <div class="cta-form-box">
+                            <h2 class="heading-secondary">
+                                Get your first meal for free!
+                            </h2>
+                            <p class="cta-discription margin-bottom-md">
+                                Healthy, tasty and hassle-free meals are waiting
+                                for you. Start eating well today. You can cancel
+                                or pause anytime. And the first meal is on us!
+                            </p>
+                            <form class="form">
+                                <div>
+                                    <label for="fullname" class="input-label"
+                                        >full name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="fullname"
+                                        placeholder="John Smith"
+                                        name="fullname"
+                                        class="input"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="email" class="input-label"
+                                        >Email address</label
+                                    >
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        placeholder="me.example.com"
+                                        name="email"
+                                        class="input"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="where" class="input-label"
+                                        >Where did you hear from us?</label
+                                    >
+                                    <select
+                                        name="where"
+                                        id="where"
+                                        class="input"
+                                    >
+                                        <option value="" selected>
+                                            Please choose one option:
+                                        </option>
+                                        <option value="friends">
+                                            Friends and family
+                                        </option>
+                                        <option value="youtube">
+                                            YouTube video
+                                        </option>
+                                        <option value="podcast">Podcast</option>
+                                        <option value="ad">Facebook ad</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="input cta-btn">
+                                    Sign Up Now
+                                </button>
+                            </form>
+                        </div>
+                        <div
+                            class="cta-img"
+                            role="img"
+                            aria-label="Woman enjoying food"
+                        />
                     </div>
                 </div>
             </section>

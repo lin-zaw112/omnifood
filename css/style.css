@@ -24,7 +24,7 @@
  -Tints : #fdf2e9, #fff,#eee;
  -Shades : #b8651b;
  -Accents
- -Grays : #555 , #333;
+ -Grays : #555 , #333 ,#45260a;
  ---------------------------------
   *-- 03 Shadow
   default : 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075); (box-shadow)
@@ -350,6 +350,7 @@
 .feature-icon {
     font-size: 3.2rem;
     color: #e67e22;
+
     background-color: #fdf2e9;
     padding: 1.6rem;
     border-radius: 50%;
@@ -362,5 +363,75 @@
 .heading-feature {
     font-size: 2.4rem;
     margin-bottom: 1.6rem;
+}
+/* **************************************** */
+/* # Call To Action Section */
+/* **************************************** */
+
+.cta-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+.cta-img {
+    background-image: linear-gradient(to right bottom, #eb984e50, #e67e2250),
+        url(../img/eating.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.cta-form-box {
+    padding: 6.4rem;
+    color: #45260a;
+}
+.cta-discription {
+    font-size: 1.8rem;
+}
+
+/* **************************************** */
+/* # Form components */
+/* **************************************** */
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.input-label {
+    display: block;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.input {
+    width: 100%;
+    height: 5.4rem;
+    border-radius: 1.2rem;
+    margin-top: 0.8rem;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    border: none;
+    color: #999;
+    font-weight: 500;
+}
+.input:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem #ddd5;
+}
+select.input {
+    color: #333;
+}
+.cta-btn {
+    align-self: end;
+    font-size: 2rem;
+    border-radius: 9px;
+    transition: all 300ms ease;
+    font-weight: 600;
+    color: #ddd;
+    background-color: #45260a !important;
+}
+.cta-btn:hover {
+    color: #45260a;
+    background-color: #ddd !important;
 }
 /* **************************************** */
