@@ -27,6 +27,8 @@
  -Grays : #555 , #333;
  ---------------------------------
   *-- 03 Shadow
+  default : 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075); (box-shadow)
+  
  ---------------------------------
  *-- 04 Border Radius
   default : 9px
@@ -241,23 +243,7 @@
 .tag--paleo {
     background-color: #fcc419;
 }
-.list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-}
-.list-icon {
-    font-size: 3rem;
-    color: #e67e22;
-}
-.list-item {
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-}
+
 .all-recipes {
     text-align: center;
     font-size: 1.8rem;
@@ -298,5 +284,83 @@
 .gallery-img:hover {
     transition: all 500ms;
     transform: scale(110%);
+}
+/* **************************************** */
+/* # PRICING Section */
+/* **************************************** */
+.section-pricing {
+    padding: 9.6rem;
+}
+.plans {
+    display: flex;
+    justify-content: space-evenly;
+}
+.price-content {
+    color: #555;
+    letter-spacing: 0.75px;
+    font-size: 1.6rem;
+}
+.price {
+    color: #333;
+    font-size: 6.2rem;
+    display: block;
+}
+.price > span {
+    font-size: 3rem;
+    font-weight: 500;
+}
+.plan-heading {
+    color: #b8651b !important ;
+}
+.plan {
+    padding: 4.4rem;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    border-radius: 0.8rem;
+}
+.sign-up-btn {
+    text-align: center;
+    margin-top: 5.2rem;
+}
+.plan-highlight {
+    background-color: #fdf2e9;
+    position: relative;
+    overflow: hidden;
+}
+.plan-highlight::before {
+    content: 'best value';
+    display: inline-block;
+    position: absolute;
+    background-color: #ffd43b;
+    right: -5.2rem;
+    top: 2.4rem;
+    transform: rotate(45deg);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1.2rem 4.8rem;
+    letter-spacing: 0.75px;
+}
+.plan-details {
+    text-align: center;
+    font-size: 1.6rem;
+}
+.feature {
+    margin-top: 6.4em;
+}
+.feature-icon {
+    font-size: 3.2rem;
+    color: #e67e22;
+    background-color: #fdf2e9;
+    padding: 1.6rem;
+    border-radius: 50%;
+    margin-bottom: 2.4rem;
+}
+.feature-discription {
+    font-size: 1.8rem;
+    letter-spacing: 0.75px;
+}
+.heading-feature {
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
 }
 /* **************************************** */

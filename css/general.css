@@ -37,11 +37,11 @@ body {
 }
 .sub-heading {
     color: #e67e22;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 500;
     display: block;
     text-transform: uppercase;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.6rem;
     letter-spacing: 0.75px;
 }
 .btn:link,
@@ -80,7 +80,7 @@ body {
 .grid {
     display: grid;
     row-gap: 9.6rem;
-    column-gap: 3.2rem;
+    column-gap: 6.4rem;
 }
 .G2--cols {
     grid-template-columns: repeat(2, 1fr);
@@ -94,7 +94,7 @@ body {
 .grid-center-v {
     align-items: center;
 }
-.text-center-v {
+.text-center {
     text-align: center;
 }
 strong {
@@ -134,4 +134,25 @@ strong {
     font-size: 1.2rem;
     border-radius: 100px;
     color: #333;
+}
+/*-----------------------------------------*/
+/* # list Components */
+/*-----------------------------------------*/
+
+.list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.list-icon {
+    font-size: 3rem;
+    color: #e67e22;
+}
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
 }
