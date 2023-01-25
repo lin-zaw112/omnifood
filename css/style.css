@@ -24,7 +24,7 @@
  -Tints : #fdf2e9, #fff,#eee;
  -Shades : #b8651b;
  -Accents
- -Grays : #555 , #333 ,#45260a;
+ -Grays : #666, #555 , #333 ,#45260a;
  ---------------------------------
   *-- 03 Shadow
   default : 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075); (box-shadow)
@@ -51,7 +51,7 @@
     height: 9.6rem;
 }
 .logo {
-    height: 2.4rem;
+    height: 2rem;
 }
 /* **************************************** */
 /* # Navigation Components*/
@@ -433,5 +433,54 @@ select.input {
 .cta-btn:hover {
     color: #45260a;
     background-color: #ddd !important;
+}
+/* **************************************** */
+/* # Footer Section */
+/* **************************************** */
+footer {
+    margin-top: 3.2rem;
+    border-top: 1px solid #eee;
+}
+.footer-boxs {
+    margin: 9.8rem auto !important;
+}
+.footer-logo {
+    height: 1.8rem;
+}
+.copyright-footer {
+    color: #666;
+    font-size: 1.6rem;
+}
+.footer-icons {
+    display: flex;
+    gap: 2.3rem;
+}
+.footer-icon {
+    font-size: 2.3rem;
+    color: #666;
+}
+.footer-heading {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+}
+.contacts {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.address {
+    font-style: normal;
+    display: block;
+    color: #333;
+    margin-bottom: 3.2rem;
+}
+.footer-link a {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.footer-link {
+    margin: 1.8rem 0;
 }
 /* **************************************** */

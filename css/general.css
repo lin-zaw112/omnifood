@@ -13,7 +13,7 @@ body {
 .container {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 3.2rem 0;
+    padding: 6.4rem 0;
 }
 .heading-primary,
 .heading-secondary,
@@ -91,6 +91,9 @@ body {
 .G4--cols {
     grid-template-columns: repeat(4, 1fr);
 }
+.G5--cols {
+    grid-template-columns: repeat(5, 1fr);
+}
 .grid-center-v {
     align-items: center;
 }
@@ -102,6 +105,9 @@ strong {
 }
 .margin-bottom-md {
     margin-bottom: 4.8rem;
+}
+.margin-bottom-sm {
+    margin-bottom: 3.2rem;
 }
 /* # link Components */
 .link:link,
