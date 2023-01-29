@@ -14,8 +14,9 @@
         <!-- Css Reset Links -->
         <link rel="stylesheet" href="css/ModernReset.css" />
         <!-- Custom Css Links -->
-        <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/general.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/query.css" />
         <title>Omnifood</title>
     </head>
 
@@ -34,6 +35,16 @@
                     >
                 </li>
             </nav>
+            <button class="btn-mobile-nav">
+                <ion-icon
+                    name="menu-outline"
+                    class="icon-mobile-nav"
+                ></ion-icon>
+                <ion-icon
+                    name="close-outline"
+                    class="icon-mobile-nav"
+                ></ion-icon>
+            </button>
         </header>
         <main>
             <section class="section-hero">
@@ -156,6 +167,7 @@
                             class="step-img"
                         />
                     </div>
+
                     <div class="step-text-box">
                         <p class="step-number">02</p>
                         <h3 class="heading-tertiary">
@@ -353,10 +365,7 @@
                     <a href="#" class="link">See All Recipes &rAarr;</a>
                 </div>
             </section>
-            <section
-                class="section-testimonial grid G2--cols"
-                id="testimonials"
-            >
+            <section class="section-testimonial" id="testimonials">
                 <div class="testimonials-container container">
                     <span class="sub-heading">Testimonial</span>
                     <h2 class="heading-secondary">
@@ -421,93 +430,91 @@
                         </div>
                     </div>
                 </div>
-                <div class="gallery">
-                    <div class="grid G3--cols gallery-box">
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-1.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-2.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-3.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-4.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-5.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-6.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-7.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-8.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-9.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-10.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-11.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                        <figure class="gallery-item">
-                            <img
-                                src="./img/gallery/gallery-12.jpg"
-                                alt="Photo of beautifully arranged food"
-                                class="gallery-img"
-                            />
-                        </figure>
-                    </div>
+                <div class="grid gallery">
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-1.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-2.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-3.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-4.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-5.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-6.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-7.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-8.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-9.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-10.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-11.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                            src="./img/gallery/gallery-12.jpg"
+                            alt="Photo of beautifully arranged food"
+                            class="gallery-img"
+                        />
+                    </figure>
                 </div>
             </section>
             <section class="section-pricing">
@@ -517,7 +524,7 @@
                         Eating well without breaking the bank
                     </h2>
                 </div>
-                <div class="plans container">
+                <div class="plans grid G2--cols">
                     <div class="plan" id="pricing">
                         <span class="plan-heading sub-heading text-center"
                             >stater</span
@@ -613,7 +620,7 @@
                         any time. Both plans include the following:
                     </span>
                 </div>
-                <div class="grid G4--cols">
+                <div class="grid G4--cols feature-box">
                     <div class="feature">
                         <ion-icon
                             name="infinite-outline"
@@ -739,7 +746,7 @@
         </main>
         <footer>
             <div class="container grid footer-boxs">
-                <div class="footer-box">
+                <div class="address-box">
                     <img
                         src="./img/omnifood-logo.png"
                         alt="omnifood"
@@ -769,7 +776,7 @@
                         Copyright © 2023 by Omnifood, Inc. All rights reserved.
                     </span>
                 </div>
-                <div class="footer-box">
+                <div class="address-box">
                     <h2 class="footer-heading">contact us</h2>
                     <address class="contacts">
                         <span class="address">
@@ -784,7 +791,7 @@
                     </address>
                 </div>
 
-                <div class="footer-box">
+                <div class="nav-box">
                     <span class="footer-heading">Account</span>
                     <ul class="footer links" role="list">
                         <li class="footer-link">
@@ -802,7 +809,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-box">
+                <div class="nav-box">
                     <span class="footer-heading">Company </span>
                     <ul class="footer links" role="list">
                         <li class="footer-link">
@@ -819,7 +826,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-box">
+                <div class="nav-box">
                     <span class="footer-heading">Resources</span>
                     <ul class="footer links" role="list">
                         <li class="footer-link">
@@ -844,4 +851,11 @@
         nomodule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+        const menuBtn = document.querySelector('.btn-mobile-nav');
+        menuBtn.addEventListener('click', () => {
+            const nav = document.querySelector('header');
+            nav.classList.toggle('nav-open');
+        });
+    </script>
 </html>
