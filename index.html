@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="We are a technology company first, but with a major focus on consumer well-being through a healthy diet."
+        />
         <!-- Google Fonts links -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,16 +28,17 @@
         <header class="header">
             <img src="./img/omnifood-logo.png" alt="logo" class="logo" />
             <nav class="main-nav">
-                <li class="main-nav-list">
-                    <a href="#how" class="main-nav-link">How it works</a
-                    ><a href="#meals" class="main-nav-link">Meals</a
-                    ><a href="#testimonials" class="main-nav-link"
-                        >Testimonials</a
-                    ><a href="#pricing" class="main-nav-link">Pricing</a
-                    ><a href="#cta" class="main-nav-link nav-cta"
-                        >Try for free</a
-                    >
-                </li>
+                <ul class="main-nav-list">
+                    <li><a class="main-nav-link" href="#">How it works</a></li>
+                    <li><a class="main-nav-link" href="#">Meals</a></li>
+                    <li><a class="main-nav-link" href="#">Testimonials</a></li>
+                    <li><a class="main-nav-link" href="#">Pricing</a></li>
+                    <li>
+                        <a class="main-nav-link nav-cta" href="#"
+                            >Try for free</a
+                        >
+                    </li>
+                </ul>
             </nav>
             <button class="btn-mobile-nav">
                 <ion-icon
@@ -62,7 +67,7 @@
                         <a href="#" class="btn btn--full btn--right-sm"
                             >Start eating well</a
                         >
-                        <a href="#" class="btn btn--outline"
+                        <a href="#how" class="btn btn--outline"
                             >Learn More &darr;</a
                         >
                         <div class="delivered-meals">
@@ -517,7 +522,7 @@
                     </figure>
                 </div>
             </section>
-            <section class="section-pricing">
+            <section class="section-pricing" id="pricing">
                 <div class="container">
                     <span class="sub-heading">pricing</span>
                     <h2 class="heading-secondary">
@@ -525,7 +530,7 @@
                     </h2>
                 </div>
                 <div class="plans grid G2--cols">
-                    <div class="plan" id="pricing">
+                    <div class="plan">
                         <span class="plan-heading sub-heading text-center"
                             >stater</span
                         >
@@ -851,11 +856,8 @@
         nomodule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script>
-        const menuBtn = document.querySelector('.btn-mobile-nav');
-        menuBtn.addEventListener('click', () => {
-            const nav = document.querySelector('header');
-            nav.classList.toggle('nav-open');
-        });
-    </script>
+    <!-- Polyfill Library -->
+    <script src="./js/smoothscroll.min.js"></script>
+    <!-- Custorm Js File -->
+    <script src="./js/script.js"></script>
 </html>
