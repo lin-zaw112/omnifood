@@ -6,8 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="We are a technology company first, but with a major focus on consumer well-being through a healthy diet."
+            content="The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs."
         />
+        <title>Omnifood &mdash; Never Cook Again</title>
+        <!-- Favicon Link -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./img/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./img/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./img/favicon/site.webmanifest" />
         <!-- Google Fonts links -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +41,6 @@
         <link rel="stylesheet" href="css/general.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/query.css" />
-        <title>Omnifood</title>
     </head>
 
     <body>
@@ -103,11 +122,18 @@
                         </div>
                     </div>
                     <div class="hero-img-box">
-                        <img
-                            src="./img/hero.webp"
-                            class="img-hero"
-                            alt="Omnifood Banner image"
-                        />
+                        <picture>
+                            <source
+                                srcset="./img/hero.webp"
+                                type="image/webp"
+                            />
+                            <source srcset="./img/hero.png" type="image/png" />
+                            <img
+                                src="./img/hero.png"
+                                class="img-hero"
+                                alt="Omnifood Banner image"
+                            />
+                        </picture>
                     </div>
                 </div>
             </section>
