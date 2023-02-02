@@ -423,7 +423,7 @@
 }
 .cta-img {
     background-image: linear-gradient(to right bottom, #eb984e50, #e67e2250),
-        url(../img/eating.jpg);
+        url(../img/eating.webp);
     background-size: cover;
     background-position: center;
 }
